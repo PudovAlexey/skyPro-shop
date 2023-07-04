@@ -25,12 +25,7 @@ export function Main() {
   return (
     <div>
       <div className="select-wrapper">
-        <Select<Sort>
-          value={sort}
-          onChange={onChangeValue}
-          defaultValue={sort}
-          options={options}
-        />
+        <Select<Sort> value={sort} onChange={onChangeValue} options={options} />
       </div>
       <div className="card-box">
         {Object.keys(goods)

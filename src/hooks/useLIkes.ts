@@ -6,7 +6,6 @@ export function useLikes(id: number) {
   useEffect(() => {
     const storage = localStorage.getItem("skyPro/likes");
     const likesDict = JSON.parse(storage || "{}");
-    console.log(likesDict, "likesDict");
     if (likesDict[id]) setIsLike(true);
   }, []);
 
