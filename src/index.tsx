@@ -9,7 +9,7 @@ const root = ReactDOM.createRoot(
 );
 root.render(
   <React.StrictMode>
-    <Router>
+    <Router basename="/skyPro-shop">
       <App />
     </Router>
   </React.StrictMode>
