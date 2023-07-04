@@ -1,0 +1,65 @@
+.good {
+  position: relative;
+  &__actions {
+    background: rgba(0, 0, 0, 0.3);
+    position: absolute;
+    left: 0;
+    top: 0px;
+    right: 0px;
+    display: flex;
+    justify-content: end;
+  }
+  &__actions-wrapper {
+    padding-right: 10px;
+    padding-top: 5px;
+    display: flex;
+    gap: 25px;
+  }
+  &__action {
+    position: relative;
+    background: transparent;
+    border: none;
+    padding: 0;
+    &:active svg {
+      transform: scale(0.9);
+    }
+  }
+
+  &__bag:before {
+    content: attr(data-count);
+    width: 18px;
+    height: 18px;
+    line-height: 18px;
+    text-align: center;
+    display: block;
+    border-radius: 50%;
+    background: rgb(67, 151, 232);
+    border: 1px solid #fff;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.4);
+    color: #fff;
+    position: absolute;
+    top: -7px;
+    left: -7px;
+
+    &__bag.badge-top-right:before {
+      left: auto;
+      right: -7px;
+    }
+
+    &__bag.badge-bottom-right:before {
+      left: auto;
+      top: auto;
+      right: -7px;
+      bottom: -7px;
+    }
+
+    &__bag.badge-bottom-left:before {
+      top: auto;
+      bottom: -7px;
+    }
+  }
+
+  &__text-box {
+    margin-top: 7px;
+  }
+}
