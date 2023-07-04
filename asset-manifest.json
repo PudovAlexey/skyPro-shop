@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/skyPro-shop/static/css/main.ed08f95e.css",
+    "main.js": "/skyPro-shop/static/js/main.b6524f37.js",
+    "static/js/787.5a0db0f5.chunk.js": "/skyPro-shop/static/js/787.5a0db0f5.chunk.js",
+    "static/media/LUNAR.jpg": "/skyPro-shop/static/media/LUNAR.8b0891f9f670cad4c974.jpg",
+    "static/media/MENU.jpg": "/skyPro-shop/static/media/MENU.e9daa82148e654947dfb.jpg",
+    "static/media/NASTAN.jpg": "/skyPro-shop/static/media/NASTAN.a3aa538b0d31dd80d909.jpg",
+    "static/media/ASKESTA.jpg": "/skyPro-shop/static/media/ASKESTA.53c7d182fd167c7089c0.jpg",
+    "static/media/VILORA.jpg": "/skyPro-shop/static/media/VILORA.4039b1aa2bed75bb5678.jpg",
+    "static/media/TATRAN.jpg": "/skyPro-shop/static/media/TATRAN.fc877ab94b7c41f68eb5.jpg",
+    "index.html": "/skyPro-shop/index.html",
+    "main.ed08f95e.css.map": "/skyPro-shop/static/css/main.ed08f95e.css.map",
+    "main.b6524f37.js.map": "/skyPro-shop/static/js/main.b6524f37.js.map",
+    "787.5a0db0f5.chunk.js.map": "/skyPro-shop/static/js/787.5a0db0f5.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ed08f95e.css",
+    "static/js/main.b6524f37.js"
+  ]
+}
