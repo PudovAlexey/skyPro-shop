@@ -4,6 +4,8 @@ import "../../styles/main.scss";
 import { useDispatch, useCartState } from "../../store/clices/Cart";
 import { CartGood } from "../../types/types";
 import { Divider } from "../Divider";
+import { useLikes } from "../../hooks/useLIkes";
+import { Like } from "../Like";
 
 type CartItem = {
   id: number;
@@ -14,6 +16,8 @@ export const CartItem = React.memo(function CartItem({ id, isLast }: CartItem) {
   const dispatch = useDispatch();
   const cartState = useCartState();
   const { name, description, img, price, currency, count } = cartState[id];
+
+  const { isLike, setIsLike } = useLikes(id);
 
   const onChangeCount = (e: React.ChangeEvent<HTMLInputElement>) => {
     const value = +e.target.value;
@@ -36,13 +40,20 @@ export const CartItem = React.memo(function CartItem({ id, isLast }: CartItem) {
     });
   };
 
+  const onSetLiked = () => {
+    setIsLike();
+  };
+
   return (
     <>
       <div className={cartItem["cart-item"]}>
         <img className={cartItem["cart-item__img"]} alt={name} src={img} />
         <div className={cartItem["cart-item__content-block"]}>
           <div className={cartItem["cart-item__text-block"]}>
-            <h4 className="card__title">{name}</h4>
+            <h4 className="card__title">
+              {name}&nbsp;
+              <Like isLike={isLike} />
+            </h4>
             <span className="card__description">{description}</span>
             <p className={cartItem["cart-item__price"]}>
               <span>{price}</span>
@@ -50,7 +61,10 @@ export const CartItem = React.memo(function CartItem({ id, isLast }: CartItem) {
               <span>{currency}.</span>
             </p>
             <div className={cartItem["cart-item__actions"]}>
-              <button className={cartItem["cart-item__action"]}>
+              <button
+                onClick={onSetLiked}
+                className={cartItem["cart-item__action"]}
+              >
                 Избранные
               </button>
               <button
@@ -71,7 +85,7 @@ export const CartItem = React.memo(function CartItem({ id, isLast }: CartItem) {
           </div>
         </div>
       </div>
-      {!isLast && <Divider/>}
+      {!isLast && <Divider />}
     </>
   );
 });
