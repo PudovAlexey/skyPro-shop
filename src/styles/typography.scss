@@ -1,0 +1,47 @@
+@mixin typography-primary-14($fw: 400, $lh: 29px) {
+  font-family: Montserrat;
+  font-size: 14px;
+  font-weight: $fw;
+  line-height: $lh;
+  letter-spacing: 0px;
+}
+
+@mixin typography-primary-16($fw: 400, $lh: 20px) {
+  font-family: Montserrat;
+  font-size: 16px;
+  font-weight: $fw;
+  line-height: $lh;
+  letter-spacing: 0em;
+}
+
+@mixin typography-primary-24($fw: 500, $lh: 29px) {
+  font-family: Montserrat;
+  font-size: 24px;
+  font-weight: $fw;
+  line-height: $lh;
+  letter-spacing: 0px;
+}
+
+@mixin typography-primary-36($fw: 600, $lh: 44px) {
+  font-family: Montserrat;
+  font-size: 36px;
+  font-weight: $fw;
+  line-height: $lh;
+  letter-spacing: 0em;
+}
+
+@mixin typography-secondary-14($fw: 600, $lh: 29px) {
+  font-family: Poppins;
+  font-size: 14px;
+  font-weight: $fw;
+  line-height: $lh;
+  letter-spacing: 0px;
+}
+
+@mixin typography-secondary-24($fw: 600, $lh: 36px) {
+  font-family: Poppins;
+  font-size: 24px;
+  font-weight: $fw;
+  line-height: $lh;
+  letter-spacing: 0px;
+}

@@ -1,3 +1,5 @@
+@import '../../styles/typography.scss';
+
 .cart-item {
   display: flex;
   gap: 30px;
@@ -23,11 +25,7 @@
   }
 
   &__price {
-    font-family: Montserrat;
-    font-size: 16px;
-    font-weight: 500;
-    line-height: 20px;
-    letter-spacing: 0em;
+    @include typography-primary-16(500);
     text-align: left;
   }
 
@@ -41,11 +39,7 @@
     border: none;
     text-decoration: underline;
     padding: 0;
-    font-family: Montserrat;
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 29px;
-    letter-spacing: 0px;
+    @include typography-primary-14();
     text-align: center;
   }
 }
